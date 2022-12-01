@@ -41,3 +41,27 @@ VALUES(221,'MM',25,'M','O-','2021-11-19',01212,111110),
 (16091,'UU',26,'M','B-','2021-11-15',10112,881500);
 
 select * from Blood_Donor;
+/* Table 3 = BloodSpecifimen By Ruhan*/
+CREATE TABLE BloodSpecimen
+( specimen_number int NOT NULL,
+ /* specimen_number = blood sample unique id*/
+ b_group varchar(10) NOT NULL,
+ status int,
+ dfind_ID int NOT NULL,
+ M_id int NOT NULL,
+ PRIMARY KEY (specimen_number)
+);
+INSERT into BloodSpecimen
+VALUES(1001, 'B+', 1,01,101),
+(11002, 'O+', 1,02,102),
+(11003, 'AB+', 1,03,102),
+(11004, 'O-', 1,04,103),
+(11005, 'A+', 0,05,101),
+(11006, 'A-', 1,06,104),
+(11007, 'AB-', 1,07,104),
+(11008, 'AB-', 0,08,105),
+(11009, 'B+', 1,09,105),
+(11010, 'O+', 0,10,105),
+(11011, 'O+', 1,11,103),
+(11012, 'O-', 1,12,102);
+Select * from BloodSpecimen;
