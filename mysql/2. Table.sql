@@ -82,3 +82,20 @@ VALUES(600,'city5'),
 (1800,'city7'),
 (1900,'city8');
 select * from City;
+
+/* Table 5 = Diseasesfinder By Adnan*/
+CREATE TABLE DiseaseFinder
+( dfind_ID int NOT NULL,
+ dfind_name varchar(20) NOT NULL,
+ dfind_PhNo bigint,
+ PRIMARY KEY (dfind_ID)
+);
+INSERT into DiseaseFinder
+VALUES(11,'P1',6903804223),
+(12,'P2',6930804223),
+(13,'p3',6993804223),
+(14,'p4',48893804223),
+(15,'p5',46993804223);
+
+select * from DiseaseFinder 
+
