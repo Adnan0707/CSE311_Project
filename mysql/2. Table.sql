@@ -98,4 +98,20 @@ VALUES(11,'P1',6903804223),
 (15,'p5',46993804223);
 
 select * from DiseaseFinder 
-
+/* Table 6 = BloodSpecifimen By Ruhan*/
+CREATE TABLE Hospital_Info_1
+( hosp_ID int NOT NULL,
+ hosp_name varchar(20) NOT NULL,
+ City_ID int NOT NULL,
+ M_id int NOT NULL,
+ primary key(hosp_ID)
+);
+INSERT into Hospital_Info_1
+VALUES(1,'H1',1101,101),
+(2,'H2',1202,103),
+(3,'H3',1303,103);
+INSERT into Hospital_Info_1
+VALUES(4,'H4',1404,104),
+(5,'H5',1805,103),
+(6,'H6',1306,106);
+select * from Hospital_Info_1
