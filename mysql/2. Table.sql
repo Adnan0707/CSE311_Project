@@ -65,3 +65,20 @@ VALUES(1001, 'B+', 1,01,101),
 (11011, 'O+', 1,11,103),
 (11012, 'O-', 1,12,102);
 Select * from BloodSpecimen;
+/* Table 4 = city By Adnan*/
+CREATE TABLE City
+( City_ID int NOT NULL,
+ City_name varchar(20) NOT NULL,
+PRIMARY KEY (City_ID)
+);
+INSERT into City
+VALUES(200,'city1'),
+(300,'city2'),
+(400,'city3'),
+(100,'city4');
+INSERT into City
+VALUES(600,'city5'),
+(1700,'city6'),
+(1800,'city7'),
+(1900,'city8');
+select * from City;
