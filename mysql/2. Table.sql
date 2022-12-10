@@ -55,3 +55,18 @@ INSERT into City
 VALUES(1200,'Dhaka'),
 (1300,'Chattogram');
 select * from City;
+
+
+
+/* Table 6 by Adnan*/
+CREATE TABLE Hospital_Info_2
+( hosp_ID int NOT NULL,
+ hosp_name varchar(20) NOT NULL,
+ hosp_needed_Bgrp varchar(10),
+ hosp_needed_qnty int,
+ primary key(hosp_ID,hosp_needed_Bgrp)
+);
+INSERT into Hospital_Info_2
+VALUES(1,'Square','O-',20),
+(1,'Mohakhali_hospital','AB+',0);
+select * from Hospital_Info_2;
