@@ -44,3 +44,14 @@ VALUES(1001, 'B+', 1,11,101),
 (1002, 'O-', 1,12,102);
 Select * from BloodSpecimen;
 
+/* Table 4 by Rohan*/
+CREATE TABLE City
+( City_ID int NOT NULL,
+ City_name varchar(20) NOT NULL,
+PRIMARY KEY (City_ID)
+);
+
+INSERT into City
+VALUES(1200,'Dhaka'),
+(1300,'Chattogram');
+select * from City;
