@@ -56,7 +56,17 @@ VALUES(1200,'Dhaka'),
 (1300,'Chattogram');
 select * from City;
 
-
+/* Table 5 by Rohan*/
+CREATE TABLE Hospital_Info_1
+( hosp_ID int NOT NULL PRIMARY KEY,
+ hosp_name varchar(20) NOT NULL,
+ City_ID int NOT NULL,
+ M_id int NOT NULL
+ );
+INSERT into Hospital_Info_1
+VALUES(1,'Apollo',1100,101),
+(2,'Govt',1200,103);
+select * from Hospital_Info_1;
 
 /* Table 6 by Adnan*/
 CREATE TABLE Hospital_Info_2
@@ -70,3 +80,21 @@ INSERT into Hospital_Info_2
 VALUES(1,'Square','O-',20),
 (1,'Mohakhali_hospital','AB+',0);
 select * from Hospital_Info_2;
+
+/* Table 5 by Rohan*/
+CREATE TABLE Recipient
+( reci_ID int NOT NULL PRIMARY KEY,
+ reci_name varchar(20) NOT NULL,
+ reci_age varchar(20),
+ reci_Brgp varchar(20),
+ reci_Bqnty int,
+ reco_ID int NOT NULL,
+ City_ID int NOT NULL,
+ M_id int NOT NULL,
+ reci_gender varchar(20),
+ reci_reg_date date
+);
+
+INSERT into Recipient
+VALUES(10001,'AB',25,'B+',2,101212,1100,101,'M','2021-12-17'),
+(10002,'CD',60,'A+',1,101312,1100,102,'M','2022-05-16');
