@@ -81,7 +81,7 @@ VALUES(1,'Square','O-',20),
 (1,'Mohakhali_hospital','AB+',0);
 select * from Hospital_Info_2;
 
-/* Table 5 by Rohan*/
+/* Table 7 by Rohan*/
 CREATE TABLE Recipient
 ( reci_ID int NOT NULL PRIMARY KEY,
  reci_name varchar(20) NOT NULL,
