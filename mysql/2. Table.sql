@@ -98,3 +98,16 @@ CREATE TABLE Recipient
 INSERT into Recipient
 VALUES(10001,'AB',25,'B+',2,101212,1100,101,'M','2021-12-17'),
 (10002,'CD',60,'A+',1,101312,1100,102,'M','2022-05-16');
+
+/* Table 8 by Adnan*/
+CREATE TABLE Recording_Staff
+( reco_ID int NOT NULL,
+ reco_Name varchar(20) NOT NULL,
+ reco_phNo int,
+PRIMARY KEY (reco_ID)
+);
+
+INSERT into Recording_Staff
+VALUES(101212,'EE',0181),
+(101312,'HH',0161);
+select * from Recording_Staff;
