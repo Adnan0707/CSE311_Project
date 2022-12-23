@@ -1,4 +1,3 @@
-
 <?php
 require 'dbConnect.php';
 
@@ -19,7 +18,7 @@ if(isset($_POST['sava_donor']))
 
     if($query_run)
     {
-       // $_SESSION
+       
         header("Location:viewAllDonor.php");
         exit(0);
     }
